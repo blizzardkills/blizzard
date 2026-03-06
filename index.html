@@ -1,24 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Blizzard</title>
+<title>Blizzard Portfolio</title>
 
 <style>
 body{
 font-family: Arial;
 background:#0f172a;
 color:white;
+margin:0;
 text-align:center;
-padding:50px;
+}
+
+header{
+background:#020617;
+padding:30px;
+font-size:30px;
+}
+
+.projects{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+padding:40px;
 }
 
 .card{
 background:#1e293b;
-padding:40px;
-border-radius:15px;
-width:500px;
-margin:auto;
-box-shadow:0 0 20px rgba(0,0,0,0.5);
+padding:20px;
+border-radius:10px;
+width:250px;
+box-shadow:0 0 10px black;
+}
+
+.card h3{
+margin-top:0;
+}
+
+button{
+background:#3b82f6;
+border:none;
+padding:10px 15px;
+border-radius:5px;
+color:white;
+cursor:pointer;
+}
+
+button:hover{
+background:#2563eb;
 }
 </style>
 
@@ -26,22 +56,37 @@ box-shadow:0 0 20px rgba(0,0,0,0.5);
 
 <body>
 
+<header>
+❄️ Blizzard Developer Portfolio
+</header>
+
+<h2>Things I Built</h2>
+
+<div class="projects">
+
 <div class="card">
+<h3>🤖 Moderation Bot</h3>
+<p>Kick, ban, warn system and logs.</p>
+<button onclick="alert('Discord Moderation Bot made in Python')">View</button>
+</div>
 
-<h1>❄️ Blizzard</h1>
-<p>Python Developer | Discord Bot Developer</p>
+<div class="card">
+<h3>💰 Economy Bot</h3>
+<p>Coins, gambling, shop system.</p>
+<button onclick="alert('Economy bot with balance and gambling system')">View</button>
+</div>
 
-<h2>🚀 Projects</h2>
-<p>🤖 Moderation Bot</p>
-<p>💰 Economy Bot</p>
-<p>🎮 RPG Bot</p>
-<p>🎉 Giveaway Bot</p>
+<div class="card">
+<h3>🎮 RPG Bot</h3>
+<p>Dungeons, leveling and leaderboard.</p>
+<button onclick="alert('Discord RPG game bot')">View</button>
+</div>
 
-<h2>🛠 Skills</h2>
-<p>Python • Discord.py • Automation • JSON</p>
-
-<h2>📫 Contact</h2>
-<p>Discord: blizzard</p>
+<div class="card">
+<h3>🎉 Giveaway Bot</h3>
+<p>Automatic giveaway system.</p>
+<button onclick="alert('Giveaway system with winners')">View</button>
+</div>
 
 </div>
 
